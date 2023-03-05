@@ -97,7 +97,6 @@ blockNumberIDSquares = []
 completeBlocks = []
 
 
-# test code
 
 blockMatrix = copy.deepcopy(rowMatrix)
 blockNumberID = 1
@@ -167,7 +166,6 @@ for column in columnMatrix:
     columnIndex = columnIndex + 1
 
 
-#test function with more cases
 
 def findShape(blockNumberID, squareList=[]):
     squareColumnList = []
@@ -413,8 +411,6 @@ def twoByTwoCheck (inputSquareIndices, squaresToFillList=[]):
     return answer
 
 
-# check previousColumnIndices if needed
-# added remainingBlocks variable. Modified lines 434, 569, 570, 603-609, 611-615, 804-809, 813-817
 def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adjacentSquareIndicesToFill=[]):
     topLeftSquareRowIndex = topLeftSquares[blockNumberIDs.index(inputBlockNumberID)]
     possibleCombinations = []
@@ -431,7 +427,6 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
     crossedSquares4 = []
     startingSquareColumnIndex = topLeftSquareColumnIndex
     startingSquareRowIndex = topLeftSquareRowIndex
-    remainingBlocks = True
     while finished == False:
         originalPossibleCombination = copy.deepcopy(possibleCombination)
         if firstIteration == False:
@@ -490,7 +485,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         startingSquareRowIndex = index4
                         startingSquareColumnIndex = columnIndex4
                         break
-                    elif notCrossedYet3_1 == True:                   # redundant variables as above code
+                    elif notCrossedYet3_1 == True:                  
                         startingSquareRowIndex = index3_1
                         startingSquareColumnIndex = columnIndex3_1
                         break
@@ -554,7 +549,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                             startingSquareRowIndex = index4
                             startingSquareColumnIndex = columnIndex4
                             break
-                        elif notCrossedYet3_1 == True:                   # redundant variables as above code
+                        elif notCrossedYet3_1 == True:                  
                             startingSquareRowIndex = index3_1
                             startingSquareColumnIndex = columnIndex3_1
                             break
@@ -566,8 +561,6 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                             startingSquareRowIndex = index3_2
                             startingSquareColumnIndex = columnIndex3_2
                             break
-            if len(possibleCombination) == 0 and remainingBlocks == True and found == False:
-                remainingBlocks = False
             if found == False:
                 if len(possibleCombination) == 3:
                     squareToRemove = possibleCombination.pop()
@@ -599,18 +592,10 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                     crossedSquares3 = []
                     crossedSquares4 = []
                     columnIndices = rowToColumn(squareToRemove[0], squareToRemove[1], squareToRemove[2])
-                    if columnIndices[2] == len(columnMatrix[columnIndices[0]][columnIndices[1]]) - 1:
-                        if remainingBlocks == True:
-                            columnIndex = columnIndices[0]
-                        else:
-                            if columnIndices[0] != len(columnMatrix) - 1:
-                                columnIndex = columnIndices[0] + 1
-                    else:
-                        columnIndex = columnIndices[0]
+                    columnIndex = columnIndices[0]
                 elif (len(possibleCombination)) == 0:
-                    if columnIndices[0] != len(columnMatrix) - 1:
-                        columnIndex = columnIndices[0] + 1
-                        remainingBlocks = True
+                    if columnIndex != len(columnMatrix) - 1:
+                        columnIndex = columnIndex + 1
                     else:
                         finished = True
                 shouldContinue = True
@@ -801,18 +786,10 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                 crossedSquares3 = []
                 crossedSquares4 = []
                 columnIndices = rowToColumn(squareToRemove[0], squareToRemove[1], squareToRemove[2])
-                if columnIndices[2] == len(columnMatrix[columnIndices[0]][columnIndices[1]]) - 1:
-                    if remainingBlocks == True:
-                        columnIndex = columnIndices[0]
-                    else:
-                        if columnIndices[0] != len(columnMatrix) - 1:
-                            columnIndex = columnIndices[0] + 1
-                else:
-                    columnIndex = columnIndices[0]
+                columnIndex = columnIndices[0]
             elif (len(possibleCombination)) == 0:
-                if columnIndices[0] != len(columnMatrix) - 1:
-                    columnIndex = columnIndices[0] + 1
-                    remainingBlocks = True
+                if columnIndex != len(columnMatrix) - 1:
+                    columnIndex = columnIndex + 1
                 else:
                     finished = True
         else:
@@ -824,12 +801,11 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
 
 
 
-number = 0
-while len(completeBlocks) < len(blockNumberIDs) and number < 5:
+
+while len(completeBlocks) < len(blockNumberIDs):
     for blockNumberID in blockNumberIDs:
         blockIDIndex = blockNumberIDs.index(blockNumberID)
         possibleCombinationsList = possibleCombinations(blockNumberID)
-        print(blockNumberID)
         if len(possibleCombinationsList) == 1:
             for squareIndex in possibleCombinationsList[0]:
                 if rowMatrix[squareIndex[0]][squareIndex[1]][squareIndex[2]] != "x":
@@ -910,9 +886,6 @@ while len(completeBlocks) < len(blockNumberIDs) and number < 5:
                         columnIndices = rowToColumn(blockNumberIDSquares[blockIDIndex][index][0], blockNumberIDSquares[blockIDIndex][index][1], blockNumberIDSquares[blockIDIndex][index][2])
                         columnMatrix[columnIndices[0]][columnIndices[1]][columnIndices[2]] = "filled" 
                 index = index + 1
-        print(rowMatrix)
-        print("end of loop")
-        number = number + 1
 
 
 print(rowMatrix)
