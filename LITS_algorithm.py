@@ -1,6 +1,5 @@
 import copy
 
-# changes in 213-225, 470, 472, 483-485, 488, 508-522, 534-538, 558-569, 578-581, 589-591, 594, 614-628, 640-644, 662-673, 682-685, 759, 769-770, 773, 777-778, 781, 785-787, 789, 932, 933, 954, 963, between 976 and 977, 981-985, 999, 1010, 1013, 1028, 1032-1037
 
 # Normal difficulty 6x6 puzzle (puzzle code: 12,315,755)
 
@@ -21,7 +20,7 @@ columnMatrix = [[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", 
 
 # Normal difficulty 8x8 puzzle (puzzle code: 11,699,370)
 
-rowMatrix = [[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]],
+'''rowMatrix = [[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]], 
 [["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]], 
 [["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]],
@@ -37,13 +36,13 @@ columnMatrix = [[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"],
 [["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]], 
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]], 
-[["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]]]
+[["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]]]'''
 
 
 # Hard difficulty 10x10 puzzle (puzzle code: 15,323,301)
 
 
-'''rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
+rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
 [["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
@@ -63,7 +62,7 @@ columnMatrix = [[["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
-[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]]]'''
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]]]
 
 
 
@@ -488,56 +487,56 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                     notCrossedYet3_2_0 = False
                     for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
                         rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
-                        if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1:
+                        if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1 and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                             startingSquareRowIndex = rowIndices
                             startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                             shouldBreak = True
                             found = True
                             break
                         if len(possibleCombination) == 3:
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet4 = True
                                 index4 = rowIndices
                                 columnIndex4 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_1 = True
                                 index3_1 = rowIndices
                                 columnIndex3_1 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0 = True
                                 index3_0 = rowIndices
                                 columnIndex3_0 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0_1 = True
                                 index3_0_1 = rowIndices
                                 columnIndex3_0_1 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0_2 = True
                                 index3_0_2 = rowIndices
                                 columnIndex3_0_2 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                         if len(possibleCombination) == 2:
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3 = True
                                 index3 = rowIndices
                                 columnIndex3 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_2 = True
                                 index3_2 = rowIndices
                                 columnIndex3_2 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
-                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_2_0 = True
                                 index3_2_0 = rowIndices
                                 columnIndex3_2_0 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                         if len(possibleCombination) == 1:
-                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                            if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 startingSquareRowIndex = rowIndices
                                 startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                 shouldBreak = True
@@ -594,56 +593,56 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         notCrossedYet3_2_0 = False
                         for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
                             rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
-                            if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1:
+                            if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1 and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 startingSquareRowIndex = rowIndices
                                 startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                 shouldBreak = True
                                 found = True
                                 break
                             if len(possibleCombination) == 3:
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet4 = True
                                     index4 = rowIndices
                                     columnIndex4 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_1 = True
                                     index3_1 = rowIndices
                                     columnIndex3_1 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0 = True
                                     index3_0 = rowIndices
                                     columnIndex3_0 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0_1 = True
                                     index3_0_1 = rowIndices
                                     columnIndex3_0_1 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0_2 = True
                                     index3_0_2 = rowIndices
                                     columnIndex3_0_2 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                             if len(possibleCombination) == 2:
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3 = True
                                     index3 = rowIndices
                                     columnIndex3 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_2 = True
                                     index3_2 = rowIndices
                                     columnIndex3_2 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
-                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_2_0 = True
                                     index3_2_0 = rowIndices
                                     columnIndex3_2_0 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                             if len(possibleCombination) == 1:
-                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination:
+                                if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     startingSquareRowIndex = rowIndices
                                     startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                     shouldBreak = True
@@ -929,9 +928,8 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
     return possibleCombinationsList
 
 
-number = 0
+
 while len(completeBlocks) < len(blockNumberIDs):
-    number = number + 1
     for blockNumberID in blockNumberIDs:
         blockIDIndex = blockNumberIDs.index(blockNumberID)
         possibleCombinationsList = possibleCombinations(blockNumberID)
@@ -1034,9 +1032,6 @@ while len(completeBlocks) < len(blockNumberIDs):
             if fillCount == 4:
                 if blockNumberID not in completeBlocks:
                     completeBlocks.append(blockNumberID)
-        # print(rowMatrix)
-        # print("end of loop")
-    number = number + 1
 
 
 print(rowMatrix)                        
