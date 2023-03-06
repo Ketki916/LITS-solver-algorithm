@@ -43,7 +43,7 @@ columnMatrix = [[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"],
 # Hard difficulty 10x10 puzzle (puzzle code: 15,323,301)
 
 
-''' rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
+'''rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
 [["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
@@ -291,7 +291,7 @@ def findShape(blockNumberID, squareList=[]):
                     eitherLorT = True
         for blockItemIndex in range(filledSquareIndex[2], len(columnMatrix[filledSquareIndex[0]][filledSquareIndex[1]])):
             rowIndices = columnToRow(filledSquareIndex[0], filledSquareIndex[1], blockItemIndex)
-            if rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] == "unfilled" and [rowIndices[0], rowIndices[1], rowIndices[2]] not in squareList:
+            if (rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] == "unfilled" or rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] == "x") and [rowIndices[0], rowIndices[1], rowIndices[2]] not in squareList:
                 numberSquares = numberSquares - 1
             if firstIteration == False and blockItemIndex == filledSquareIndex[2]:
                 numberTurns = numberTurns + 1
@@ -453,7 +453,7 @@ def twoByTwoCheck (inputSquareIndices, squaresToFillList=[]):
 
 def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adjacentSquareIndicesToFill=[]):
     topLeftSquareRowIndex = topLeftSquares[blockNumberIDs.index(inputBlockNumberID)]
-    possibleCombinations = []
+    possibleCombinationsList = []
     alreadyFilled = False
     alreadyFilledSquares = []
     finished = False
@@ -720,6 +720,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         columnIndex = columnIndex + 1
                     else:
                         finished = True
+                        return possibleCombinationsList
                 shouldContinue = True
             if shouldContinue == True:
                 continue
@@ -759,7 +760,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                 if alreadyFilled == False:                                         
                     alreadyFilled = True
                 if rowIndices not in alreadyFilledSquares:
-                    possibleCombinations = []
+                    possibleCombinationsList = []
                     alreadyFilledSquares.append(rowIndices)
                 if len(possibleCombination) == 0:
                         if rowIndices not in crossedSquares1 and rowIndices not in possibleCombination:
@@ -820,7 +821,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                     if alreadyFilled == False:
                         alreadyFilled = True
                     if rowIndices not in alreadyFilledSquares:
-                        possibleCombinations = []
+                        possibleCombinationsList = []
                         alreadyFilledSquares.append(rowIndices)
                     if len(possibleCombination) == 0:
                         if rowIndices not in crossedSquares1 and rowIndices not in possibleCombination:
@@ -872,7 +873,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         containsFilledSquares = False
             if True not in twoByTwo and matchedShape == False and containsFilledSquares == True:
                 itemToAppend = copy.deepcopy(possibleCombination)
-                possibleCombinations.append(itemToAppend)
+                possibleCombinationsList.append(itemToAppend)
             squareToRemove = possibleCombination.pop()
             crossedSquares4.append(squareToRemove)
             columnIndices = rowToColumn(squareToRemove[0], squareToRemove[1], squareToRemove[2])
@@ -925,12 +926,12 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                 columnIndex = columnIndex + 1
         if firstIteration == True:
             firstIteration = False
-    return possibleCombinations
-
+    return possibleCombinationsList
 
 
 number = 0
-while len(completeBlocks) < len(blockNumberIDs) and number < 1:
+while len(completeBlocks) < len(blockNumberIDs):
+    number = number + 1
     for blockNumberID in blockNumberIDs:
         blockIDIndex = blockNumberIDs.index(blockNumberID)
         possibleCombinationsList = possibleCombinations(blockNumberID)
@@ -972,6 +973,7 @@ while len(completeBlocks) < len(blockNumberIDs) and number < 1:
                         filteredPossibleCombinationsList.remove(possibleCombination)
                         continue
                     breakLoop = False
+                    isolated = False
                     for adjacentBlockID in adjacentBlockIDList:
                         if adjacentBlockID not in filledAdjacentBlockIDList:
                             blockNumbersToCheck = [adjacentBlockID]
@@ -1037,7 +1039,7 @@ while len(completeBlocks) < len(blockNumberIDs) and number < 1:
     number = number + 1
 
 
-# print(rowMatrix)                        
+print(rowMatrix)                        
 
 
 
