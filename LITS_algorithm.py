@@ -42,7 +42,7 @@ columnMatrix = [[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"],
 # Hard difficulty 10x10 puzzle (puzzle code: 15,323,301)
 
 
-rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
+''' rowMatrix = [[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
 [["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
@@ -62,7 +62,52 @@ columnMatrix = [[["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
 [["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
 [["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
-[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]]]
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]]]'''
+
+
+# Hard difficulty 20x20 puzzle (puzzle code: 3,330,439)
+
+rowMatrix = [[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"]],
+[["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]]]
+
+columnMatrix = [[["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"]],
+[["unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
+[["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"]],
+[["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"]],
+[["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]],
+[["unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"]],
+[["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"]],
+[["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled"], ["unfilled"]],
+[["unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled", "unfilled", "unfilled"], ["unfilled", "unfilled"], ["unfilled", "unfilled", "unfilled"]]]
 
 
 
@@ -219,6 +264,7 @@ def findShape(blockNumberID, squareList=[]):
                     if columnMatrix[columnIndex][blockIndex][blockItemIndex] == "filled" or [rowIndices[0], rowIndices[1], rowIndices[2]] in squareList:
                         filledFound = True
                         firstFilledSquareIndex = [columnIndex, blockIndex, blockItemIndex]
+                        shouldBreak = True
                         break
                 if shouldBreak == True:
                     break
@@ -251,6 +297,7 @@ def findShape(blockNumberID, squareList=[]):
     iterationNumber = 1
     shapeFound = False
     eitherLorT = False
+    sCount = 0
     while shapeFound == False:
         filledSquareIndex = firstFilledSquareIndex
         filledSquareRowIndex = firstFilledSquareRowIndex
@@ -270,7 +317,7 @@ def findShape(blockNumberID, squareList=[]):
                         break  
             if filledSquareRowIndex[2] != 0:
                 if firstFilledSquareRowIndex == [filledSquareRowIndex[0], filledSquareRowIndex[1], filledSquareRowIndex[2] - 1]:
-                    if numberSquares == 3:
+                    if numberSquares == 4:
                         shapeFound = True
                         return "L"
                 if filledSquareRowIndex[2] != len(rowMatrix[filledSquareRowIndex[0]][filledSquareRowIndex[1]]) - 1:
@@ -307,6 +354,10 @@ def findShape(blockNumberID, squareList=[]):
             if rowIndices[2] != len(rowMatrix[rowIndices[0]][rowIndices[1]]) - 1:
                 if rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2] + 1] == "filled" or [rowIndices[0], rowIndices[1], rowIndices[2] + 1] in squareList:
                     numberAdjacent = numberAdjacent + 1
+            if numberAdjacent == 2:
+                sCount = sCount + 1
+            if sCount == 2 and eitherLorT == False and firstIteration == False:
+                return "S"
             if numberAdjacent == 3:
                 shapeFound = True
                 return "T"
@@ -330,9 +381,8 @@ def findShape(blockNumberID, squareList=[]):
 
                 
 
-def adjacentBlocks(inputSquareIndices, squaresToFill=[], filled=False):
+def adjacentBlocks(inputSquareIndices, squaresToFill=[], filled=False, x=True):
     adjacentBlockIDs = []
-    mainBlockID = blockMatrix[inputSquareIndices[0][0]][inputSquareIndices[0][1]][inputSquareIndices[0][2]]
     for inputSquareIndex in inputSquareIndices:
         if not (inputSquareIndex[2] == 0 and inputSquareIndex[1] == 0):
             if inputSquareIndex[2] == 0:
@@ -340,14 +390,16 @@ def adjacentBlocks(inputSquareIndices, squaresToFill=[], filled=False):
                 leftBlockID = blockMatrix[leftBlockIndex[0]][leftBlockIndex[1]][leftBlockIndex[2]]
                 if leftBlockID not in adjacentBlockIDs:
                     if not (filled == True and (rowMatrix[leftBlockIndex[0]][leftBlockIndex[1]][leftBlockIndex[2]] != "filled" and [leftBlockIndex[0], leftBlockIndex[1], leftBlockIndex[2]] not in squaresToFill)):
-                        adjacentBlockIDs.append(leftBlockID)
+                        if not (x == False and rowMatrix[leftBlockIndex[0]][leftBlockIndex[1]][leftBlockIndex[2]] == "x"):
+                            adjacentBlockIDs.append(leftBlockID)
         if not (inputSquareIndex[2] == len(rowMatrix[inputSquareIndex[0]][len(rowMatrix[inputSquareIndex[0]]) - 1]) - 1 and inputSquareIndex[1] == len(rowMatrix[inputSquareIndex[0]]) - 1):
             if inputSquareIndex[2] == len(rowMatrix[inputSquareIndex[0]][inputSquareIndex[1]]) - 1:
                 rightBlockIndex = [inputSquareIndex[0], inputSquareIndex[1] + 1, 0]
                 rightBlockID = blockMatrix[rightBlockIndex[0]][rightBlockIndex[1]][rightBlockIndex[2]]
                 if rightBlockID not in adjacentBlockIDs:
                     if not (filled == True and (rowMatrix[rightBlockIndex[0]][rightBlockIndex[1]][rightBlockIndex[2]] != "filled" and [rightBlockIndex[0], rightBlockIndex[1], rightBlockIndex[2]] not in squaresToFill)):
-                        adjacentBlockIDs.append(rightBlockID)
+                        if not (x == False and rowMatrix[rightBlockIndex[0]][rightBlockIndex[1]][rightBlockIndex[2]] == "x"):
+                            adjacentBlockIDs.append(rightBlockID)
         columnIndices = rowToColumn(inputSquareIndex[0], inputSquareIndex[1], inputSquareIndex[2])
         if inputSquareIndex[0] != 0:
             if columnIndices[2] == 0:
@@ -356,7 +408,8 @@ def adjacentBlocks(inputSquareIndices, squaresToFill=[], filled=False):
                 topBlockID = blockMatrix[topBlockIndex[0]][topBlockIndex[1]][topBlockIndex[2]]
                 if topBlockID not in adjacentBlockIDs:
                     if not (filled == True and (rowMatrix[topBlockIndex[0]][topBlockIndex[1]][topBlockIndex[2]] != "filled" and [topBlockIndex[0], topBlockIndex[1], topBlockIndex[2]] not in squaresToFill)):
-                        adjacentBlockIDs.append(topBlockID)
+                        if not (x == False and rowMatrix[topBlockIndex[0]][topBlockIndex[1]][topBlockIndex[2]] == "x"):
+                            adjacentBlockIDs.append(topBlockID)
         if inputSquareIndex[0] != len(rowMatrix) - 1:
             if columnIndices[2] == len(columnMatrix[columnIndices[0]][columnIndices[1]]) - 1:
                 bottomBlockColumnIndex = [columnIndices[0], columnIndices[1] + 1, 0]
@@ -364,7 +417,8 @@ def adjacentBlocks(inputSquareIndices, squaresToFill=[], filled=False):
                 bottomBlockID = blockMatrix[bottomBlockIndex[0]][bottomBlockIndex[1]][bottomBlockIndex[2]]
                 if bottomBlockID not in adjacentBlockIDs:
                     if not (filled == True and (rowMatrix[bottomBlockIndex[0]][bottomBlockIndex[1]][bottomBlockIndex[2]] != "filled" and [bottomBlockIndex[0], bottomBlockIndex[1], bottomBlockIndex[2]] not in squaresToFill)):
-                        adjacentBlockIDs.append(bottomBlockID)
+                        if not (x == False and rowMatrix[bottomBlockIndex[0]][bottomBlockIndex[1]][bottomBlockIndex[2]] == "x"):
+                            adjacentBlockIDs.append(bottomBlockID)
     return adjacentBlockIDs
 
 
@@ -464,11 +518,44 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
     crossedSquares2 = []
     crossedSquares3 = []
     crossedSquares4 = []
-    startingSquareColumnIndex = topLeftSquareColumnIndex
-    startingSquareRowIndex = topLeftSquareRowIndex
-    index = 0
+    squareFound = False
+    for blockItemIndex in range(topLeftSquareColumnIndex[2], len(columnMatrix[columnIndex][topLeftSquareColumnIndex[1]])):
+        rowIndices = columnToRow(columnIndex, topLeftSquareColumnIndex[1], blockItemIndex)
+        if columnMatrix[columnIndex][topLeftSquareColumnIndex[1]][blockItemIndex] != "x":
+            squareFound = True
+            startingSquareColumnIndex = [columnIndex, topLeftSquareColumnIndex[1], blockItemIndex]
+            break
+    if topLeftSquareColumnIndex[1] != len(columnMatrix[columnIndex]) - 1 and squareFound == False:
+        shouldBreak = False 
+        for blockIndex in range(topLeftSquareColumnIndex[1] + 1, len(columnMatrix[columnIndex])):
+            rowIndices = columnToRow(columnIndex, blockIndex, 0)
+            if blockMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] == inputBlockNumberID:
+                for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
+                    rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
+                    if columnMatrix[columnIndex][blockIndex][blockItemIndex] != "x":
+                        squareFound = True
+                        startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
+                        break
+                if shouldBreak == True:
+                    break
+    if squareFound == False:
+        columnIndex = columnIndex + 1
+        while squareFound == False:
+            for blockIndex in range(0, len(columnMatrix[columnIndex])):
+                rowIndices = columnToRow(columnIndex, blockIndex, 0)
+                if blockMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] == inputBlockNumberID:
+                    for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
+                        rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
+                        if columnMatrix[columnIndex][blockIndex][blockItemIndex] != "x":
+                            squareFound = True
+                            startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
+                            break
+                    if squareFound == True:
+                        break
+            if squareFound == True:
+                break
+            columnIndex = columnIndex + 1
     while finished == False:
-        index = index + 1
         originalPossibleCombination = copy.deepcopy(possibleCombination)
         if firstIteration == False:
             shouldBreak = False
@@ -488,7 +575,6 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                     for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
                         rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
                         if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1 and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
-                            startingSquareRowIndex = rowIndices
                             startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                             shouldBreak = True
                             found = True
@@ -496,48 +582,39 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         if len(possibleCombination) == 3:
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet4 = True
-                                index4 = rowIndices
                                 columnIndex4 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_1 = True
-                                index3_1 = rowIndices
                                 columnIndex3_1 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0 = True
-                                index3_0 = rowIndices
                                 columnIndex3_0 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0_1 = True
-                                index3_0_1 = rowIndices
                                 columnIndex3_0_1 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_0_2 = True
-                                index3_0_2 = rowIndices
                                 columnIndex3_0_2 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                         if len(possibleCombination) == 2:
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3 = True
-                                index3 = rowIndices
                                 columnIndex3 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_2 = True
-                                index3_2 = rowIndices
                                 columnIndex3_2 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                             if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                 notCrossedYet3_2_0 = True
-                                index3_2_0 = rowIndices
                                 columnIndex3_2_0 = [columnIndex, blockIndex, blockItemIndex]
                                 found = True
                         if len(possibleCombination) == 1:
                             if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
-                                startingSquareRowIndex = rowIndices
                                 startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                 shouldBreak = True
                                 found = True
@@ -547,35 +624,27 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                     if shouldBreak == True:
                         break
                     if notCrossedYet4 == True:
-                        startingSquareRowIndex = index4
                         startingSquareColumnIndex = columnIndex4
                         break
                     elif notCrossedYet3_1 == True:                  
-                        startingSquareRowIndex = index3_1
                         startingSquareColumnIndex = columnIndex3_1
                         break
                     elif notCrossedYet3_0 == True:                  
-                        startingSquareRowIndex = index3_0
                         startingSquareColumnIndex = columnIndex3_0
                         break
                     elif notCrossedYet3_0_1 == True:                  
-                        startingSquareRowIndex = index3_0_1
                         startingSquareColumnIndex = columnIndex3_0_1
                         break
                     elif notCrossedYet3_0_2 == True:                  
-                        startingSquareRowIndex = index3_0_2
                         startingSquareColumnIndex = columnIndex3_0_2
                         break
                     elif notCrossedYet3 == True:
-                        startingSquareRowIndex = index3
                         startingSquareColumnIndex = columnIndex3
                         break
                     elif notCrossedYet3_2 == True:
-                        startingSquareRowIndex = index3_2
                         startingSquareColumnIndex = columnIndex3_2
                         break
                     elif notCrossedYet3_2_0 == True:
-                        startingSquareRowIndex = index3_2_0
                         startingSquareColumnIndex = columnIndex3_2_0
                         break
             if columnIndex != len(columnMatrix) - 1 and found == False:
@@ -594,7 +663,6 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         for blockItemIndex in range(0, len(columnMatrix[columnIndex][blockIndex])):
                             rowIndices = columnToRow(columnIndex, blockIndex, blockItemIndex)
                             if len(possibleCombination) == 0 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares1 and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
-                                startingSquareRowIndex = rowIndices
                                 startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                 shouldBreak = True
                                 found = True
@@ -602,48 +670,39 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                             if len(possibleCombination) == 3:
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[2] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet4 = True
-                                    index4 = rowIndices
                                     columnIndex4 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_1 = True
-                                    index3_1 = rowIndices
                                     columnIndex3_1 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0 = True
-                                    index3_0 = rowIndices
                                     columnIndex3_0 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[2][0], possibleCombination[2][1], possibleCombination[2][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0_1 = True
-                                    index3_0_1 = rowIndices
                                     columnIndex3_0_1 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_0_2 = True
-                                    index3_0_2 = rowIndices
                                     columnIndex3_0_2 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                             if len(possibleCombination) == 2:
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[1] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3 = True
-                                    index3 = rowIndices
                                     columnIndex3 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_2 = True
-                                    index3_2 = rowIndices
                                     columnIndex3_2 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                                 if ([columnIndex, blockIndex, blockItemIndex - 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2]) or [columnIndex, blockIndex, blockItemIndex + 1] == rowToColumn(possibleCombination[1][0], possibleCombination[1][1], possibleCombination[1][2])) and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares3 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares4 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
                                     notCrossedYet3_2_0 = True
-                                    index3_2_0 = rowIndices
                                     columnIndex3_2_0 = [columnIndex, blockIndex, blockItemIndex]
                                     found = True
                             if len(possibleCombination) == 1:
                                 if [rowIndices[0], rowIndices[1], rowIndices[2] - 1] == possibleCombination[0] and [rowIndices[0], rowIndices[1], rowIndices[2]] not in crossedSquares2 and [rowIndices[0], rowIndices[1], rowIndices[2]] not in possibleCombination and rowMatrix[rowIndices[0]][rowIndices[1]][rowIndices[2]] != "x":
-                                    startingSquareRowIndex = rowIndices
                                     startingSquareColumnIndex = [columnIndex, blockIndex, blockItemIndex]
                                     shouldBreak = True
                                     found = True
@@ -651,35 +710,27 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                         if shouldBreak == True:
                             break
                         if notCrossedYet4 == True:
-                            startingSquareRowIndex = index4
                             startingSquareColumnIndex = columnIndex4
                             break
                         elif notCrossedYet3_1 == True:                  
-                            startingSquareRowIndex = index3_1
                             startingSquareColumnIndex = columnIndex3_1
                             break
                         elif notCrossedYet3_0 == True:                  
-                            startingSquareRowIndex = index3_0
                             startingSquareColumnIndex = columnIndex3_0
                             break
                         elif notCrossedYet3_0_1 == True:                  
-                            startingSquareRowIndex = index3_0_1
                             startingSquareColumnIndex = columnIndex3_0_1
                             break
                         elif notCrossedYet3_0_2 == True:                  
-                            startingSquareRowIndex = index3_0_2
                             startingSquareColumnIndex = columnIndex3_0_2
                             break
                         elif notCrossedYet3 == True:
-                            startingSquareRowIndex = index3
                             startingSquareColumnIndex = columnIndex3
                             break
                         elif notCrossedYet3_2 == True:
-                            startingSquareRowIndex = index3_2
                             startingSquareColumnIndex = columnIndex3_2
                             break
                         elif notCrossedYet3_2_0 == True:
-                            startingSquareRowIndex = index3_2_0
                             startingSquareColumnIndex = columnIndex3_2_0
                             break
             if found == False:
@@ -812,7 +863,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                                 possibleCombination.append(rowIndices)
                     elif len(possibleCombination) == 3:
                         if rowIndices not in crossedSquares4 and rowIndices not in crossedSquares1 and rowIndices not in possibleCombination:
-                            if blockItemIndex != 0:   #stopped here
+                            if blockItemIndex != 0:  
                                 previousColumnIndices = columnToRow(startingSquareColumnIndex[0], startingSquareColumnIndex[1], blockItemIndex - 1) 
                             if (previousColumnIndices in possibleCombination) or ([rowIndices[0], rowIndices[1], rowIndices[2] - 1] in possibleCombination):
                                 possibleCombination.append(rowIndices)
@@ -839,7 +890,7 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
                                 possibleCombination.append(rowIndices)
                     elif len(possibleCombination) == 3:
                         if rowIndices not in crossedSquares4 and rowIndices not in crossedSquares1 and rowIndices not in possibleCombination:
-                            if blockItemIndex != 0:   #stopped here
+                            if blockItemIndex != 0: 
                                 previousColumnIndices = columnToRow(startingSquareColumnIndex[0], startingSquareColumnIndex[1], blockItemIndex - 1) 
                             if (previousColumnIndices in possibleCombination) or ([rowIndices[0], rowIndices[1], rowIndices[2] - 1] in possibleCombination):
                                 possibleCombination.append(rowIndices)
@@ -852,15 +903,16 @@ def possibleCombinations(inputBlockNumberID, adjacentBlockNumberToFill="0", adja
             else:
                 adjacentBlockIDList = adjacentBlocks(possibleCombination, [], True)
             matchedShape = False
-            for blockNumberID in adjacentBlockIDList:
-                adjacentShape = 0
-                if blockNumberID != adjacentBlockNumberToFill:
-                    if blockNumberID in completeBlocks:
-                        adjacentShape = findShape(blockNumberID)
-                else:
-                    adjacentShape = findShape(adjacentBlockNumberToFill, adjacentSquareIndicesToFill)
-                if possibleCombinationShape == adjacentShape:
-                    matchedShape = True
+            if adjacentBlockIDList != []:
+                for blockNumberID in adjacentBlockIDList:
+                    adjacentShape = 0
+                    if blockNumberID != adjacentBlockNumberToFill:
+                        if blockNumberID in completeBlocks:
+                            adjacentShape = findShape(blockNumberID)
+                    else:
+                        adjacentShape = findShape(adjacentBlockNumberToFill, adjacentSquareIndicesToFill)
+                    if possibleCombinationShape == adjacentShape:
+                        matchedShape = True
             if adjacentSquareIndicesToFill != []:
                 twoByTwo = twoByTwoCheck(possibleCombination, adjacentSquareIndicesToFill)
             else:
@@ -949,7 +1001,10 @@ while len(completeBlocks) < len(blockNumberIDs):
         else:
             filteredPossibleCombinationsList = copy.deepcopy(possibleCombinationsList)
             for possibleCombination in possibleCombinationsList:
-                adjacentBlockIDList = adjacentBlocks(possibleCombination)
+                adjacentBlockIDList = adjacentBlocks(possibleCombination, [], False, False)
+                if len(adjacentBlockIDList) == 0:
+                    filteredPossibleCombinationsList.remove(possibleCombination)
+                    break
                 shouldContinue = False
                 for adjacentBlockID in adjacentBlockIDList:
                     if adjacentBlockID not in completeBlocks:
@@ -960,51 +1015,55 @@ while len(completeBlocks) < len(blockNumberIDs):
                             break
                 if shouldContinue == True:
                     continue
+                fullAdjacentBlockIDList = adjacentBlocks(blockNumberIDSquares[blockIDIndex], [], True)
+                filteredFullAdjacentBlockIDList = []
+                for adjacentBlockID in fullAdjacentBlockIDList:
+                    if adjacentBlockID in completeBlocks:
+                        filteredFullAdjacentBlockIDList.append(adjacentBlockID)
+                filledAdjacentBlockIDList = adjacentBlocks(possibleCombination, [], True)
                 adjacentFilled = True
                 for adjacentBlockID in adjacentBlockIDList:
                     if adjacentBlockID not in completeBlocks:
                         adjacentFilled = False
                         break
                 if adjacentFilled == True:
-                    filledAdjacentBlockIDList = adjacentBlocks(possibleCombination, [], True)
                     if len(filledAdjacentBlockIDList) == 0:
                         filteredPossibleCombinationsList.remove(possibleCombination)
                         continue
+                isolated = False
+                breakLoop = False
+                for adjacentBlockID in filteredFullAdjacentBlockIDList:
                     breakLoop = False
-                    isolated = False
-                    for adjacentBlockID in adjacentBlockIDList:
-                        if adjacentBlockID not in filledAdjacentBlockIDList:
-                            blockNumbersToCheck = [adjacentBlockID]
-                            checkedBlockNumbers = []
-                            isolated = False
-                            filledSquares = []
-                            while len(blockNumbersToCheck) > 0:
-                                adjacentBlockIDIndex = blockNumberIDs.index(blockNumbersToCheck[0])
-                                for square in blockNumberIDSquares[adjacentBlockIDIndex]:
-                                    if rowMatrix[square[0]][square[1]][square[2]] == "filled":
-                                        filledSquares.append(square)
-                                secondAdjacentBlockIDList = adjacentBlocks(filledSquares)
-                                for secondAdjacentBlockID in secondAdjacentBlockIDList:
-                                    if (secondAdjacentBlockID not in completeBlocks) and (secondAdjacentBlockID != blockNumberID):
-                                        breakLoop = True
-                                        break
-                                if breakLoop == True:
+                    if adjacentBlockID not in filledAdjacentBlockIDList:
+                        blockNumbersToCheck = [adjacentBlockID]
+                        checkedBlockNumbers = []
+                        isolated = False
+                        filledSquares = []
+                        while len(blockNumbersToCheck) > 0:
+                            adjacentBlockIDIndex = blockNumberIDs.index(blockNumbersToCheck[0])
+                            for square in blockNumberIDSquares[adjacentBlockIDIndex]:
+                                if rowMatrix[square[0]][square[1]][square[2]] == "filled":
+                                    filledSquares.append(square)
+                            secondAdjacentBlockIDList = adjacentBlocks(filledSquares, [], False, False)
+                            for secondAdjacentBlockID in secondAdjacentBlockIDList:
+                                if (secondAdjacentBlockID not in completeBlocks) and (secondAdjacentBlockID != blockNumberID or blockNumbersToCheck[0] in filledAdjacentBlockIDList):
+                                    breakLoop = True
                                     break
-                                filledSecondAdjacentBlockIDList = adjacentBlocks(filledSquares, [], True)
-                                if filledSecondAdjacentBlockIDList != []:
-                                    for filledSecondAdjacentBlockID in filledSecondAdjacentBlockIDList:
-                                        if (filledSecondAdjacentBlockID not in checkedBlockNumbers) and (filledSecondAdjacentBlockID not in blockNumbersToCheck):
-                                            blockNumbersToCheck.append(filledSecondAdjacentBlockID)
-                                checkedBlockNumbers.append(blockNumbersToCheck.pop(0))
-                                filledSquares = []
                             if breakLoop == True:
                                 break
-                            if (blockNumbersToCheck == []) and (len(checkedBlockNumbers) < len(blockNumberIDs) - 1):
-                                isolated = True
-                                filteredPossibleCombinationsList.remove(possibleCombination)
-                                break
-                    if isolated == True:
-                        continue
+                            filledSecondAdjacentBlockIDList = adjacentBlocks(filledSquares, [], True)
+                            if filledSecondAdjacentBlockIDList != []:
+                                for filledSecondAdjacentBlockID in filledSecondAdjacentBlockIDList:
+                                    if (filledSecondAdjacentBlockID not in checkedBlockNumbers) and (filledSecondAdjacentBlockID not in blockNumbersToCheck):
+                                        blockNumbersToCheck.append(filledSecondAdjacentBlockID)
+                            checkedBlockNumbers.append(blockNumbersToCheck.pop(0))
+                            filledSquares = []
+                        if (blockNumbersToCheck == []) and (len(checkedBlockNumbers) < len(blockNumberIDs) - 1) and breakLoop == False:
+                            isolated = True
+                            filteredPossibleCombinationsList.remove(possibleCombination)
+                            break
+                if isolated == True:
+                    continue
             counter = [0] * len(blockNumberIDSquares[blockIDIndex])
             index = 0
             fillCount = 0
@@ -1023,7 +1082,7 @@ while len(completeBlocks) < len(blockNumberIDs):
                         columnIndices = rowToColumn(blockNumberIDSquares[blockIDIndex][index][0], blockNumberIDSquares[blockIDIndex][index][1], blockNumberIDSquares[blockIDIndex][index][2])
                         columnMatrix[columnIndices[0]][columnIndices[1]][columnIndices[2]] = "x"
                 if item == len(filteredPossibleCombinationsList):
-                    if rowMatrix[blockNumberIDSquares[blockIDIndex][index][0]][blockNumberIDSquares[blockIDIndex][index][1]][blockNumberIDSquares[blockIDIndex][index][2]] != "x":
+                    if rowMatrix[blockNumberIDSquares[blockIDIndex][index][0]][blockNumberIDSquares[blockIDIndex][index][1]][blockNumberIDSquares[blockIDIndex][index][2]] == "unfilled":
                         rowMatrix[blockNumberIDSquares[blockIDIndex][index][0]][blockNumberIDSquares[blockIDIndex][index][1]][blockNumberIDSquares[blockIDIndex][index][2]] = "filled"
                         fillCount = fillCount + 1
                         columnIndices = rowToColumn(blockNumberIDSquares[blockIDIndex][index][0], blockNumberIDSquares[blockIDIndex][index][1], blockNumberIDSquares[blockIDIndex][index][2])
@@ -1034,7 +1093,7 @@ while len(completeBlocks) < len(blockNumberIDs):
                     completeBlocks.append(blockNumberID)
 
 
-print(rowMatrix)                        
+print(rowMatrix)                 
 
 
 
